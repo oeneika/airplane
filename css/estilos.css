@@ -7,6 +7,13 @@ canvas{ display: block; vertical-align: bottom; }
 #stats{ border-radius: 3px 3px 0 0; overflow: hidden; }
 .count-particles{ border-radius: 0 0 3px 3px; }
 
+#bodysito{
+    background-color: whitesmoke;
+}
+
+.width40{
+    width: 40px
+}
 
 .panel{
     /*background: rgba(226,226,226,0.4);*/
@@ -47,11 +54,6 @@ p,a, h1, label, i{
     color: #154171;
 }
 
-.formulario{
-    width: 380px;
-    margin: 0 auto;
-}
-
 .titulito{
     font-size: 17px!important;
     font-weight: bold!important;
@@ -59,6 +61,10 @@ p,a, h1, label, i{
 
 .margin1{
     margin: 1px!important;
+}
+
+.margin075{
+    margin: 0.75rem 0!important;
 }
 
 .font14px{
@@ -70,28 +76,81 @@ p,a, h1, label, i{
 }
 
 .border-radius15px{
-    border-radius: 15px;
+    border-radius: 10px;
+}
+
+.hover{
+    position: relative;
+}
+.hover:before {
+  content:"";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 1s ease;
+}
+
+.hover:hover:before {
+    width: 100%;
 }
 
 .contenedor-azul{
-    background-image: linear-gradient(to right, #000046 , #1CB5E0);
-    padding: 15px;
-    border-radius: 15px;
+    background-image: linear-gradient(to left, #000046 , #1CB5E0);
+    padding: 10px 0;
+    margin: 5px 0;
+    border-radius: 10px;
     background-color: blue;
+    filter: opacity(.9);
+}
+
+.contenedor-azul:hover{
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+    filter: opacity(1);
 }
 
 .color-blanco {
-    color: white;
+    color: white!important;
+}
+
+.color-amarillo{
+    color: yellow;
+}
+
+.border-blanco{
+    border: 1px solid rgb(255, 255, 254);
 }
 
 hr {
     border-top: 2px solid rgb(243, 227, 32);
 }
 
-@media screen (min-width: 768px){
-    .color-blanco{
-        color: green;
-    }
+#hr-distinto{
+    border-top:5px solid rgb(16, 105, 159)
+
+}
+
+.bg-blue{
+    background-color: #1cb5e0!important; 
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white!important;
+}
+
+.espaciado{
+    margin: 12px 0;
+}
+
+.card-header, .card-body{
+    background-image: linear-gradient(to right, #2193b0 , #6dd5ed);
+}
+
+.input-radius{
+    border-radius: .25rem!important;
 }
 
 

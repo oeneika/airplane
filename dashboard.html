@@ -7,16 +7,20 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker3.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/metismenu/dist/metisMenu.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<title>Document</title>
+	<title>Dashboard AirPlane</title>
 </head>
-<body>
+<body id="bodysito">
 	<header>
-    <div class="navbar navbar-expand-md navbar-dark bg-dark box-shadow">
+    <div class="navbar navbar-expand-md navbar-dark bg-blue box-shadow">
       <div class="container d-flex justify-content-between">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
-          <strong>metisMenu</strong>
+          <img src="img/travel.svg" alt="" class="width40">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -24,32 +28,14 @@
         <div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
           <ul class="navbar-nav ml-auto">
   
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Examples</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item" href="mm-vertical.html">Vertical Menu</a>
-                <a class="dropdown-item" href="mm-horizontal.html">Horizontal Menu</a>
-                <a class="dropdown-item" href="mm-folder.html">Folder View</a>
-                <a class="dropdown-item" href="mm-vertical-hover.html">Hover Option For Desktop</a>
-                <a class="dropdown-item" href="mm-animate.html">Animate</a>
-                <a class="dropdown-item" href="mm-event.html">Event</a>
-                <a class="dropdown-item" href="mm-event2.html">Event 2</a>
-                <a class="dropdown-item" href="mm-dispose.html">Stop &amp; Start metisMenu</a>
-                <a class="dropdown-item" href="mm-ajax.html">Ajax</a>
-                <a class="dropdown-item" href="mm-faq.html">FAQ</a>
-                <a class="dropdown-item" href="mm-bs-card.html">Bootstrap Card</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Templates</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown02">
-                <a class="dropdown-item" href="http://chl.onokumus.com" target="_blank">Chaldene Admin</a>
-                <a class="dropdown-item" href="http://elk.onokumus.com" target="_blank">Elektron Admin</a>
-                <a class="dropdown-item" href="http://onokumus.github.io/twbuttons/" target="_blank">twbuttons</a>
-              </div>
+            <li class="nav-item">
+               <a class="nav-link" href="http://onokumus.com" target="_blank">Alojamientos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://onokumus.com" target="_blank">onokumus</a>
+               <a class="nav-link" href="http://onokumus.com" target="_blank">Vuelos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://onokumus.com" target="_blank">Carros</a>
             </li>
           </ul>
         </div>
@@ -57,76 +43,178 @@
     </div>
   </header>
 
-  <section>
+  <hr id="hr-distinto" class="my-0">
+
+  <section class="espaciado">
   	<div class="container">
   		<div class="accordion" id="accordionExample">
-		<div class="card">
-			<div class="card-header" id="headingOne">
-			  <h2 class="mb-0">
-			    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			      Collapsible Group Item #1
-			    </button>
-			  </h2>
-			</div>
+    		<div class="card">
+    			<div class="card-header" id="headingOne">
+            <div class="row">
+              <div class="col-md-12">
+                  <button class="btn btn-link color-blanco centrado negrita" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Busca tu alojamiento
+                  </button>
+              </div>
+            </div>
+    			  
+    			</div>
 
-			<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-				  <div class="card-body">
-				    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				  </div>
-			</div>
-		</div>
-	</div>
+    			<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+    				  <div class="card-body">
+    				    <form action="">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <input type="text" class="form-control input-radius" placeholder="Destino">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group input-group date">
+                        <input type="text" class="form-control input-radius" placeholder="Fecha de ida"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group input-group date">
+                        <input type="text" class="form-control input-radius" placeholder="Fecha de regreso"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <input type="number" class="form-control input-radius" placeholder="Número de Habitaciones">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <input type="number" class="form-control input-radius" placeholder="Número de Personas">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <button class="btn btn-primary w-100 hover">Buscar</button>
+                      </div>
+                    </div>
+                  </div>      
+                </form>
+    				  </div>
+    			</div>
+    		</div>
+	   </div>
   	</div>
   </section>
 
-  <section>
+  <section class="resultados">
   	<div class="container">
   		<div class="row">
   			<div class="col-md-6">
   				<div class="contenedor-azul">
   					<div class="container">
   						<div class="row">
-  							<div class="col-xs-4 col-md-4">
-  								<img src="img/2.jpg" width="100%" class="border-radius15px">
+  							<div class="col-md-5">
+  								<img src="img/2.jpg" width="100%" class="border-radius15px my-1">
   							</div>
-  							<div class="col-xs-8 col-md-8">
+  							<div class="col-md-7">
   								<p class="titulito margin1 color-blanco ">Cambria Hotel & Suites Miami Airport</p>
   								<p class=" margin1 font14px color-blanco ">Miami. A 7.91 km del centro</p>
-  								<hr class="margin1">
+  								<hr class="margin075">
   								<div class="row">
-  									<div class="col-md-8">
-  										<p class="margin1 color-blanco "><span class="titulito">$ 151</span> precio por noche</p> 
+  									<div class="col-md-9">
+  										<p class="margin1 color-blanco font13px"><span class="titulito">$ 151</span> precio por noche</p> 
   										<p class="margin1 font13px color-blanco ">Impuestos y tasas no incluidas</p>
   									</div>
-  									<div class="col-md-4">
-  										<p class="margin1 text-right color-blanco ">★ ★</p>
-  										<p class="margin1 text-right color-blanco ">★ ★</p>
+  									<div class="col-md-3">
+  										<p class="margin1 text-right color-blanco "><i class="fas fa-wifi color-blanco" title="Wifi"></i> <i class="fas fa-dumbbell color-blanco" title="Gym"></i><i class="fas fa-swimmer color-blanco" title="Piscina"></i> <i class="fas fa-tv color-blanco" title="Televisión por cable"></i></p>
   									</div>
   								</div>
-  								<p class="text-right margin1 font14px color-blanco ">5 estrellas ★ ★ ★ ★ ★</p>
+  								<p class="text-right margin1 font14px color-blanco ">5 estrellas <span class="color-amarillo">★ ★ ★ ★ ★</span></p>
   							</div>
   						</div>
   					</div>
   				</div>
   			</div>
   			<div class="col-md-6">
-  				<div class="contenedor-azul">
-  					<div class="container">
-  						<div class="row">
-  							<div class="col-md-4">
-  								<img src="img/2.jpg" width="100%">
-  							</div>
-  							<div class="col-md-6">
-  								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  								consequat.
-  							</div>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
+          <div class="contenedor-azul">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <img src="img/1.jpg" width="100%" class="border-radius15px my-1">
+                </div>
+                <div class="col-md-7">
+                  <p class="titulito margin1 color-blanco ">Quality Inn Miami Airport</p>
+                  <p class=" margin1 font14px color-blanco ">Miami. A 9.97 km del centro</p>
+                  <hr class="margin075">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <p class="margin1 color-blanco font13px"><span class="titulito">$ 111</span> precio por noche</p> 
+                      <p class="margin1 font13px color-blanco ">Impuestos y tasas no incluidas</p>
+                    </div>
+                    <div class="col-md-3">
+                      <p class="margin1 text-right color-blanco "><i class="fas fa-wifi color-blanco" title="Wifi"></i> <i class="fas fa-dumbbell color-blanco" title="Gym"></i><i class="fas fa-tv color-blanco" title="TV"></i></p>
+                    </div>
+                  </div>
+                  <p class="text-right margin1 font14px color-blanco ">3 estrellas <span class="color-amarillo">★ ★ ★</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
   		</div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contenedor-azul">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <img src="img/2.jpg" width="100%" class="border-radius15px my-1">
+                </div>
+                <div class="col-md-7">
+                  <p class="titulito margin1 color-blanco ">Cambria Hotel & Suites Miami Airport</p>
+                  <p class=" margin1 font14px color-blanco ">Miami. A 7.91 km del centro</p>
+                  <hr class="margin075">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <p class="margin1 color-blanco font13px"><span class="titulito">$ 151</span> precio por noche</p> 
+                      <p class="margin1 font13px color-blanco ">Impuestos y tasas no incluidas</p>
+                    </div>
+                    <div class="col-md-3">
+                      <p class="margin1 text-right color-blanco "><i class="fas fa-wifi color-blanco" title="Wifi"></i> <i class="fas fa-dumbbell color-blanco" title="Gym"></i><i class="fas fa-swimmer color-blanco" title="Piscina"></i> <i class="fas fa-tv color-blanco" title="Televisión por cable"></i></p>
+                    </div>
+                  </div>
+                  <p class="text-right margin1 font14px color-blanco ">5 estrellas <span class="color-amarillo">★ ★ ★ ★ ★</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="contenedor-azul">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <img src="img/1.jpg" width="100%" class="border-radius15px my-1">
+                </div>
+                <div class="col-md-7">
+                  <p class="titulito margin1 color-blanco ">Quality Inn Miami Airport</p>
+                  <p class=" margin1 font14px color-blanco ">Miami. A 9.97 km del centro</p>
+                  <hr class="margin075">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <p class="margin1 color-blanco font13px"><span class="titulito">$ 111</span> precio por noche</p> 
+                      <p class="margin1 font13px color-blanco ">Impuestos y tasas no incluidas</p>
+                    </div>
+                    <div class="col-md-3">
+                      <p class="margin1 text-right color-blanco "><i class="fas fa-wifi color-blanco" title="Wifi"></i> <i class="fas fa-dumbbell color-blanco" title="Gym"></i><i class="fas fa-tv color-blanco" title="TV"></i></p>
+                    </div>
+                  </div>
+                  <p class="text-right margin1 font14px color-blanco ">3 estrellas <span class="color-amarillo">★ ★ ★</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   	</div>
   </section>
 
@@ -134,9 +222,14 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/bootstrap-datepicker.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/metismenu"></script>
 <script type="text/javascript">
-	 $("#metismenu").metisMenu();
+   $("#metismenu").metisMenu();
+   $('.input-group.date').datepicker({
+    format: "dd/mm/yyyy",
+    language: "es"
+    });
 </script>
 
 </body>
